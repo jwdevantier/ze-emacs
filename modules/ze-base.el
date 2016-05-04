@@ -30,6 +30,7 @@
   (global-unset-key (kbd "C-z"))
 
   ;; keybinds for manipulating regions
+  (global-set-key (kbd "C-c m") 'mark-whole-buffer)
   (global-set-key (kbd "C-c i") 'indent-region)
   (global-set-key (kbd "C-c c") 'comment-region)
   (global-set-key (kbd "C-c u") 'uncomment-region)
