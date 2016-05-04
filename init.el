@@ -28,5 +28,9 @@
 (ze-mod-load "fsharp")
 (ze-mod-load "racket")
 (ze-mod-load "clojure")
+(eval-after-load 'fsharp-mode
+  (add-hook 'fsharp-mode-hook
+	    (lambda ()
+	      (define-key fsharp-mode-map (kbd "C-SPC") 'fsharp-ac/complete-at-point))))
 
 (ze-init)

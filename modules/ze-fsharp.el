@@ -14,7 +14,11 @@
 	 "Default fsharp-mode settings - override ze-fsharp-mode-hook to change"
 	 ;; Default locations on Ubuntu Linux
 	 (setq inferior-fsharp-program "/usr/bin/fsharpi --readline-")
-	 (setq fsharp-compiler "/usr/bin/fsharpc"))
+	 (setq fsharp-compiler "/usr/bin/fsharpc")
+
+	 ;; 4=>2 spaces of indentation - much more room for code.
+	 (setq fsharp-indent-offset 2)
+	 (setq fsharp-continuation-offset 2))
        
        (setq ze-fsharp-mode-hook 'ze-fsharp-mode-defaults)
        (add-hook 'fsharp-mode-hook
