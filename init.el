@@ -28,6 +28,7 @@
 (ze-mod-load "fsharp")
 (ze-mod-load "racket")
 (ze-mod-load "clojure")
+(ze-mod-load "php")
 (ze-mod-load "elm")
 
 (eval-after-load 'fsharp-mode
